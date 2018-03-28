@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4567/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Atori: AI bot that finds your code buddy in Slack</title>
+  <meta name="description" content="Atori is an artificial intelligence bot that helps you solve your code-related task, by connecting you with the right knowledge person in your community based on their skillset, area of expertise and availability.">
+  <meta name="author" content="">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58692720-9', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <link rel="icon" type="image/png" href="http://localhost:4567/images/favicon.png">
+  <!-- Bootstrap core CSS -->
+  <link href="./Atori_ AI bot that finds your code buddy in Slack_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="./Atori_ AI bot that finds your code buddy in Slack_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./Atori_ AI bot that finds your code buddy in Slack_files/simple-line-icons.css">
+  <link href="./Atori_ AI bot that finds your code buddy in Slack_files/css" rel="stylesheet">
+  <link href="./Atori_ AI bot that finds your code buddy in Slack_files/css(1)" rel="stylesheet">
+  <link href="./Atori_ AI bot that finds your code buddy in Slack_files/css(2)" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="./Atori_ AI bot that finds your code buddy in Slack_files/device-mockups.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="./Atori_ AI bot that finds your code buddy in Slack_files/new-age.min.css" rel="stylesheet">
+  <style>
+  .notification {
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    background-color: white;
+    z-index: 100;
+    width: 96%;
+    padding: 14px;
+    border-radius: 20px;
+    margin-left: -48%;
+    border: 1px black solid;
+    font-size: 13px;
+  }
+  @media screen and (min-width: 621px) {
+    .notification {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      background-color: white;
+      z-index: 100;
+      width: 500px;
+      padding: 20px;
+      border-radius: 20px;
+      margin-left: -250px;
+      border: 1px black solid;
+    }
+  }
+  </style>
+</head>
+
+<body id="page-top">
+
+<div id="notification" class="notification">
+Dear users,<br>
+ <br>
+It has been a difficult decision, but we have sadly decided to close down Atori.<br><br>
+
+ 
+
+<b>Why close down?</b><br>
+
+In short, Atori faced a complex chicken and egg problem, that showed very difficult to crack. Both in terms of technology, as well as, with regards to demand and supply (people who need help, and people who want to (and can) help. 
+
+We appreciate all the support and interest that you have shown and we would like to thank all who have used Atori and found her helpful! 
+<br><br>
+<b>Next steps?</b><br>
+All data which was collected will be removed before 1st of April. However, Atori will live in another reincarnation; we found another startup which is working on a slack chatbot solution and they were willing to buy out Atori's code and development setup.
+<br><br>
+ 
+
+We wish you the best of luck in the future with solving coding issues. May they not take up too much of your time!🤓
+<br>
+ 
+Sincerely, <br><br>
+Viktor and Max
+</div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="http://localhost:4567/#page-top">
+        <img src="./Atori_ AI bot that finds your code buddy in Slack_files/logo.png" class="logo">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://localhost:4567/#download">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://localhost:4567/#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+  <canvas id="background" width="1440" height="759"></canvas>
+    <div class="container h-100">
+      <div class="row h-100" style="margin: -100vh 0 0 0;">
+        <div class="col-lg-12 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-2">Find your code buddy in Slack</h1>
+            <h3 class="mb-5">Atori is an AI bot that finds someone in Slack who can help with your coding issue.</h3>
+              <a href="https://slack.com/oauth/authorize?scope=bot,channels:read,channels:history,chat:write:bot&amp;client_id=179546707936.200239382198&amp;redirect_uri=https%3a%2f%2fslack.botframework.com%2fHome%2fauth&amp;state=satori-production" class="btn btn-outline btn-xl js-scroll-trigger">
+                <img src="./Atori_ AI bot that finds your code buddy in Slack_files/icon-slack.svg" style="margin: 0 10px 0 0">Add to
+                <b>Slack</b>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="download bg-primary-1 text-center" id="download">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mx-auto mb-5">
+          <img src="./Atori_ AI bot that finds your code buddy in Slack_files/1.Question.png" width="100%">
+        </div>
+        <div class="col-md-6 mx-auto mb-5">
+          <h2 class="text-left">Describe your issue to Atori</h2>
+          <h5 class="text-left">Write a Direct Message to Atori. Include code snippets if necessary.</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="download bg-primary-2 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mx-auto mb-5">
+          <h2 class="text-right">Atori contacts a knowledge person in your community</h2>
+          <h5 class="text-right">A member is located based on their skillset, area of expertise and availability.</h5>
+        </div>
+        <div class="col-md-6 mx-auto mb-5">
+          <img src="./Atori_ AI bot that finds your code buddy in Slack_files/2.Connect.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="download bg-primary-3 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mx-auto mb-5">
+          <img src="./Atori_ AI bot that finds your code buddy in Slack_files/3.Success.png" width="100%">
+        </div>
+        <div class="col-md-6 mx-auto mb-5">
+          <h2 class="text-left">When your request has been accepted Atori will notify you</h2>
+          <h5 class="text-left">It’s time to solve the issue with your code buddy! 🎉</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+        <!-- for Responsive Viewport (Insert Carousel or other item for "cover" effect)  -->
+        <!-- Carousel container -->
+
+  <section class="cta">
+    <div class="cta-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mx-auto mb-5">
+            <h2>What are you waiting for?</h2>
+          </div>
+          <div class="col-md-12 mx-auto mb-5 fl">
+            <img src="./Atori_ AI bot that finds your code buddy in Slack_files/logo-mobile.png">
+            <img src="./Atori_ AI bot that finds your code buddy in Slack_files/plus.svg" class="plus">
+            <img src="./Atori_ AI bot that finds your code buddy in Slack_files/icon-slack.svg">
+          </div>
+          <div class="col-md-12 mx-auto mb-auto" style="text-align: center;">
+            <a href="https://slack.com/oauth/authorize?scope=bot,channels:read,channels:history,chat:write:bot&amp;client_id=179546707936.200239382198&amp;redirect_uri=https%3a%2f%2fslack.botframework.com%2fHome%2fauth&amp;state=satori-production" class="btn btn-outline btn-xl js-scroll-trigger">
+              <img src="./Atori_ AI bot that finds your code buddy in Slack_files/icon-slack.svg" style="margin: 0 10px 0 0">
+              Add to <b>Slack</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-lg-4 my-auto">
+          <ul class="list-inline list-social">
+            <li class="list-inline-item social-twitter">
+              <a href="https://twitter.com/atori_ai">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-angellist">
+              <a href="https://angel.co/atori">
+                <i class="fa fa-angellist"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-product-hunt">
+              <a href="http://localhost:4567/#">
+                <i class="fa fa-product-hunt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 my-auto">
+        </div>
+
+        <div class="col-lg-2 my-auto footer">
+          <p>Copyright © 2017 Atori</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="http://localhost:4567/privacy">Privacy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://localhost:4567/terms-of-use">Terms Of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/jquery.min.js"></script>
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/new-age.min.js"></script>
+
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="./Atori_ AI bot that finds your code buddy in Slack_files/bg.js"></script>
+
+  <script>
+  $("#notification").click(function(){
+      $("#notification").hide();
+  })
+  </script>
+
+</body></html>
