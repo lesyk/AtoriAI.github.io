@@ -1,5 +1,5 @@
 # atori.ai: Find your code buddy in Slack
-![atori.ai](https://github.com/AtoriAI/AtoriAI.github.io/blob/master/logo.png)
+<img src="https://github.com/AtoriAI/AtoriAI.github.io/blob/master/logo.png" width="30%">
 Atori is an AI bot that finds someone in Slack who can help with your coding issue.
 
 [![atori.ai demo](http://img.youtube.com/vi/N8z6gWCH6wE/0.jpg)](https://www.youtube.com/watch?v=N8z6gWCH6wE "Video Title")
